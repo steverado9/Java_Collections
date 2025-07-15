@@ -1,0 +1,22 @@
+    INTERFACES
+1)Iterable interface: This interface represents an object that can be used in a forEach statement.
+2)Collection interface: This interface extends the iterable interface and adds extra functionalities to it.
+it represents an object that can act as a container or a collection of objects.
+    Capabilites of a Collection
+-We should be able to add an object to a collection.
+-Remove an object to a collection.
+-Check for the existence of an object in a collection.
+search for java collection interface. to see what can be done to a collection.
+    Sub Interface of a collection
+1)List: This allows us to work with an ordered collection and access objects using their index.
+-ArrayList: This stores an object in an array,if the link gets full, it automatically resizes it.
+-LinkedList: This is based on the link list data structure.
+2)Queue: This also extends the collection interface, it creates an additional operations to work with a queue of objects.
+-PriorityQueue: Is the class that implements the queue interface.
+3)Set: The class that implements this interface is called HashSet.
+    The need for iterables.
+Iterable interface is not part of the collections framework.
+It is part of java.lang package.
+It is one of the fundamental interfaces in java and it represents an object that we can loop over.
+
+Changing the internal implementation of a function, should not change it's public interface.
