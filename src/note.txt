@@ -1,22 +1,52 @@
-    INTERFACES
-1)Iterable interface: This interface represents an object that can be used in a forEach statement.
-2)Collection interface: This interface extends the iterable interface and adds extra functionalities to it.
+        Iterable interface
+This interface represents an object that can be used in a forEach statement.
+        Collection interface
+This interface extends the iterable interface and adds extra functionalities to it.
 it represents an object that can act as a container or a collection of objects.
-    Capabilites of a Collection
+    Operations in a Collection Interface
 -We should be able to add an object to a collection.
--Remove an object to a collection.
+-Remove an object in a collection.
 -Check for the existence of an object in a collection.
-search for java collection interface. to see what can be done to a collection.
+search for "java collection interface". to see what can be done to a collection.
     Sub Interface of a collection
 1)List: This allows us to work with an ordered collection and access objects using their index.
 -ArrayList: This stores an object in an array,if the link gets full, it automatically resizes it.
 -LinkedList: This is based on the link list data structure.
 2)Queue: This also extends the collection interface, it creates an additional operations to work with a queue of objects.
 -PriorityQueue: Is the class that implements the queue interface.
-3)Set: The class that implements this interface is called HashSet.
+3)Set: This represents a collection without duplicate.
+The class that implements this interface is called HashSet.
     The need for iterables.
 Iterable interface is not part of the collections framework.
 It is part of java.lang package.
-It is one of the fundamental interfaces in java and it represents an object that we can loop over.
+It is one of the fundamental interfaces in java
+and it represents an object that we can loop over.
+        What problem an iterable interface tries to solve
+1)Changing the internal implementation of a function, should not impact it's public interface.
+In object oriented programming(oop), we should design our classes in the same way.
 
-Changing the internal implementation of a function, should not change it's public interface.
+        How can we iterate over a list without changing it's internal implementation
+That is where the iterable interface comes to the rescue.
+The Iterable interface represents an object that is iterable.
+We are working with an array "T[]", if anytime in the future T[] is changed to an arrayList
+or a diffrent data structure, the client of the class should not be affected.
+    Iterator
+This is an object we use to iterate over an iterable.
+alt + enter : to implement itrator method.
+The iterator helps us loop over our list without knowing anything about it internal implementation.
+The for each loop is a syntactic sugar over the iterator object.
+    COLLECTION INTERFACE
+This represents an object that acts as a collection or container for other objects.
+Every collection is iterable.
+ArrayList is one of the classes that implements this interface.
+Collections do not support indexing.
+    Operations in the collection interface
+-We should be able to add an object to a collection.
+-Remove an object in a collection.
+-Check for the existence of an object in a collection.
+We should program against interfaces
+
+        List Interface
+This represents an ordered collection aka a sequence.
+With list, we can access objects by their index.
+The list interface extends the collection interface.
